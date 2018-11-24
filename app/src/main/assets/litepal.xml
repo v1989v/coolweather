@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="address"/>
+    <version value="2"/>
+    <list>
+        <mapping class="com.skylan.allinweather.db.Province"/>
+        <mapping class="com.skylan.allinweather.db.City"/>
+        <mapping class="com.skylan.allinweather.db.County"/>
+    </list>
+
+</litepal>

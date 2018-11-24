@@ -1,6 +1,10 @@
 package com.skylan.allinweather;
 
+import android.net.Uri;
+
 import org.junit.Test;
+
+import java.util.List;
 
 import static org.junit.Assert.*;
 
@@ -9,9 +13,15 @@ import static org.junit.Assert.*;
  *
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
-public class ExampleUnitTest {
+public class ExampleUnitTest  {
     @Test
     public void addition_isCorrect() {
-        assertEquals(4, 2 + 2);
+        Uri uri = Uri.parse("content://com.skylan.allinweather.provider/Province");
+        List<String> list = uri.getPathSegments();
+        for(String s :list) {
+            System.out.println(s);
+        }
+        System.out.println("----------------------");
+        System.out.println(uri.getPath());
     }
 }
